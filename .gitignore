@@ -1,0 +1,13 @@
+# Ignored files
+*.txt
+
+#Ignored folders
+
+projects/
+php_tuts/
+phpClass/
+schoolwork/
+VSCodeworkspace/
+.idea/
+.vscode/
+..myImgs/

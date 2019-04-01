@@ -1,0 +1,67 @@
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin body-font {
+  font-family: 'Source Sans Pro';
+}
+
+//Font Color Mixin
+@mixin font-color-one{
+  color: $tetrad;
+  text-shadow: 1px 2px $primary, 1px 2px $secondary,1px 2px $tertiary;
+}
+//  @include font-color-one;
+
+
+@mixin font-color-two{
+  color: $secondary;
+  text-shadow: 1px 2px $primary, 1px 2px $tetrad, 1px 2px $tertiary,;
+}
+
+@mixin font-color-three {
+  color: $secondary;
+  text-shadow: 1px 2px $tertiary, 1px 2px $primary !important;
+}
+
+.primary-font-style{
+  @include font-color-one;
+}
+
+.secondary-font-style{
+  @include font-color-two;
+}
+
+.third-font-style{
+  @include font-color-three;
+}
+
+//animations
+@mixin slow-scroll-animation{
+
+  @keyframes slow-scroll{
+    0% {
+        transform: translateY(-40px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+
+    }
+    75% {
+
+    }
+    100% {
+
+    }
+  }
+
+  animation: slow-scroll 0.6s ease-in-out 0.2s;
+}

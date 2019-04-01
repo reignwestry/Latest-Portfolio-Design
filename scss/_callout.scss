@@ -1,0 +1,16 @@
+// Callout
+.callout {
+  padding: 2rem 0;
+  height: 25vh;
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 40rem;
+    color: $tertiary;
+  }
+  .container {
+    margin-top: 0;
+  }
+}
