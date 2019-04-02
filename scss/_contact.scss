@@ -1,0 +1,55 @@
+// Contact Section
+.callout {
+  padding: 2rem 0;
+  height: 25vh;
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 40rem;
+    color: $tertiary;
+  }
+  .container {
+    margin-top: 0;
+  }
+  .content-section>form{
+    border: 1px dashed red;
+  }
+}
+
+.contact-section{
+  width: 50%;
+  margin-left: 52%;
+  .container{
+    width: 90%;
+  }
+
+  //FORM
+  form{
+    border: 1px solid white;
+    width: 80vw;
+    margin: 0 auto;
+
+    label{
+      text-align: left;
+      span{
+        color: red;
+        font-size: 150%;
+      }
+    }
+    fieldset{
+      padding: 2%;
+
+      input {
+        width: 80%;
+        margin: 2% 10%;
+      }
+    }
+
+    .message{
+      width: 90%;
+      margin: 5%;
+    }
+  }
+}

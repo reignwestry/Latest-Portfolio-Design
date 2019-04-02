@@ -2,6 +2,15 @@
 <html lang="en">
 
   <head>
+      <!--
+            TODO
+                1. REDESIGN the look of the contact form
+                2. Develop "more" projects page
+                3. ADAPT MOBILE VIEW
+                4. ADD ALL PROJECTS TO DATABASE
+                5. CREATE FUNCTIONALITY OF PHP FORM  --DONE
+
+      -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,13 +60,14 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#services">Services</a>
         </li>
-        <!--  ADD Websites App page -->
+        <!--  ADD Websites page -->
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="websites.html">Websites</a>
+          <a class="js-scroll-trigger" href="portfolio.php">Websites</a>
         </li>
 		<!-- ADD Android App page -->
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="Android-app.html">Android App</a>
+          <a class="js-scroll-trigger" href="Android-app.html">Android App</a><!-- TODO ADD
+          ANDROID APP page -->
         </li>
         <!-- ADD iOs App page -->
         <li class="sidebar-nav-item">
@@ -320,30 +330,39 @@
 
 
 
-    <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
+    <!-- Contact Section -->
+    <section class="contact-section bg-primary text-white">
 
       <div class="container text-center">
-          <h2 class="mb-4">Have a project, need a developer, send me a message... I would love
-              to check it out</h2>
+          <h2 class="mb-4">Have a idea, need a developer... Let's Chat!</h2>
           <!-- a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a-->
 
           <!-- TODO FINISH DESIGNING AND BUILDING FORM -->
           <!-- FORM -->
-          <form class="col-md-6 form-design">
+          <form class="col-md-6 form-design contact-form" action="mail/contactForm.php"
+          method="post">
               <fieldset>
-                  <label>First Name: </label><br>
-                    <input type="#" alt="first-name" class="col-md-4"><br>
-                  <label>Last Name: </label><br>
-                    <input type="#" alt="last-name" class="col-md-4"><br>
-                  <label>Email: </label><br>
-                    <input type="#" alt="email" class="col-md-4">
+                  <label for="fname"><span>*</span>First Name: </label><br>
+                    <input type="text" alt="first-name" name="fname" class="col-md-4" 
+                           placeholder="First Name" required><br>
+                  <label for="lname"><span>*</span>Last Name: </label><br>
+                    <input type="text" alt="last-name" name="lname" class="col-md-4" 
+                           placeholder="Last Name" required><br>
+                  <label for="phone" >Phone: </label><br>
+                    <input type="phone" alt="phone" name="phone" class="col-md-4"
+                           placeholder="000-000-0000" ><br>
+                  <label for="email"><span>*</span>Email: </label><br>
+                    <input type="email" alt="email" name="email" class="col-md-4"
+                           placeholder="you@youremail.com" required>
 
               </fieldset>
-              <textarea class="message" value="Let's Talk!">
+              <label><span>*</span>Message:</label>
+              <textarea class="message" name="message" aria-placeholder="Tell me
+              about your idea"
+                        required>
               </textarea>
 
-              <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+              <button type="submit" name="submit" class="btn btn-xl btn-dark">SEND</button>
           </form>
       </div>
     </section>

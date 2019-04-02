@@ -1,7 +1,6 @@
 # Ignored files
 *.txt
-mail\mailTEMPLATE.php
-mail\contact_me.php
+
 ios.php
 portfolio.php
 todo.md
@@ -18,3 +17,4 @@ VSCodeworkspace/
 .vscode/
 ..myImgs/
 ...priv-data/
+mail/

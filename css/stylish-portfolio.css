@@ -92,7 +92,7 @@ h6 {
   .masthead .hero-subtitle {
     color: #03fa50;
     text-shadow: 1px 2px #010fc7, 1px 2px #00ffff, 1px 2px #c3c022; }
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     .masthead {
       height: 100vh; }
       .masthead h1 {
@@ -199,6 +199,31 @@ h6 {
     color: #c3c022; }
   .callout .container {
     margin-top: 0; }
+  .callout .content-section > form {
+    border: 1px dashed red; }
+
+.contact-section {
+  width: 50%;
+  margin-left: 52%; }
+  .contact-section .container {
+    width: 90%; }
+  .contact-section form {
+    border: 1px solid white;
+    width: 80vw;
+    margin: 0 auto; }
+    .contact-section form label {
+      text-align: left; }
+      .contact-section form label span {
+        color: red;
+        font-size: 150%; }
+    .contact-section form fieldset {
+      padding: 2%; }
+      .contact-section form fieldset input {
+        width: 80%;
+        margin: 2% 10%; }
+    .contact-section form .message {
+      width: 90%;
+      margin: 5%; }
 
 .portfolio-item {
   display: block;
@@ -384,17 +409,5 @@ i {
   text-shadow: 1px 1px #010fc7;
   font-size: 1.5em;
   font-weight: bolder; }
-
-form {
-  border: 1px solid white;
-  margin: 0 auto; }
-  form fieldset {
-    padding: 2%; }
-    form fieldset input {
-      width: 80%;
-      margin: 2% 10%; }
-  form .message {
-    width: 80%;
-    margin: 5%; }
 
 /*# sourceMappingURL=stylish-portfolio.css.map */
