@@ -1,0 +1,6 @@
+MockUp_Ideas/
+.vscode/
+.idea/
+payments/
+vendor/
+*.iml
