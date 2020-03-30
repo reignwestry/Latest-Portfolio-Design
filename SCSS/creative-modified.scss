@@ -1,16 +1,24 @@
+//REIGNWESTRY.COM-Portfolio
+
+
 // Import custom variables (overrides Bootstrap default variables)
-@import "./variables.scss";
+@import "./_variables.scss";
 
 // Import Bootstrap
-@import "./bootstrap-4.0.0/scss/bootstrap-reboot.scss";
-@import "./bootstrap-4.0.0/scss/bootstrap-grid.scss";
-@import "./bootstrap-4.0.0/scss/bootstrap.scss";
+@import "./bootstrap-4.0.0/scss/_bootstrap-reboot.scss";
+@import "./bootstrap-4.0.0/scss/_bootstrap-grid.scss";
+@import "./bootstrap-4.0.0/scss/_bootstrap.scss";
 
 // Import custom styles
-@import "./global.scss";
-@import "./navbar.scss";
-@import "./masthead.scss";
-@import "./portfolio.scss";
+@import "./_global";
+@import "./_navbar";
+@import "./_masthead";
+@import "./_portfolio";
+@import "./_call2action.scss";
+@import "./_contact";
 
-@import "./call2action.scss";
-@import "../payments/stripe.scss";
+// Import Stripe Payment Styling
+//@import "../payments/_stripe.scss";
+
+// Import mobile styling
+// 

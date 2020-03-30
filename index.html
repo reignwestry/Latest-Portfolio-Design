@@ -9,6 +9,10 @@
     04 ADD payment gateway (STRIPE)
     05 add social media links
     06 other projects
+    07 Develop Services Page
+    08 Develop About Page
+    09 Develop Resume Page
+    10 Complete Contact Page
 -->
 <head>
 
@@ -20,7 +24,7 @@
   <title>Reign Westry - Home</title>
 
   <!-- Font Awesome Icons -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!--link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
@@ -58,10 +62,10 @@
             <a class="nav-link js-scroll-trigger" href="resume.html">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="portfolio.html/">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="index.html/#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -239,12 +243,14 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="page-section" id="contact">
+  <section class="page-section contact" id="contact">
+
       <!-- todo REPLACE PHONE & EMAIL with a functional contact form -->
       <div class="container">
           <div class="row justify-content-center">
-              <div class="row col-lg-4" >
-                  <img class="img-fluid" style="width: 20vw; height: auto;" src="img/professional-img/self.jpg" alt="Reign Westry - Developer">
+              <div class="row col-lg-4 portfolio-image-holder" >
+                <!-- PORTFOLIO IMAGE -->
+                  <img class="img-fluid portfolio-selfie" src="img/professional-img/self.jpg" alt="Reign Westry - Developer">
               </div>
               <div class="col-lg-8 text-center">
                   <h2 class="mt-0">Let's Get In Touch!</h2>
@@ -266,40 +272,6 @@
           </div>
       </div>
   </section>
-  <!-- section class=" " style="background: url(img/background/blur-cellphone-close-up-196644.jpg)
-  no-repeat center center; ">
-      <div class="container col-lg-3">
-        <div class="row" >
-          <form class="col-lg contact" action="">
-            <div class="form-group mb-1 ">
-              <label for="fName">First Name</label>
-              <input type="fName" class="form-control" id="fName" aria-describedby="nameHelp" placeholder="Enter First Name">
-            </div>
-            <div class="form-group mb-1 ">
-              <label for="fName">Last Name</label>
-              <input type="lName" class="form-control" id="lName" aria-describedby="nameHelp" placeholder="Enter Last Name">
-            </div>
-
-            <div class="form-group ">
-              <label for="email">Email Address</label>
-              <input type="email" class="form-control " id="email" aria-describedby="emailHelp"
-                     placeholder="you@you.com">
-              <small>We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group ">
-              <label for="phoneNumber">Phone Number</label>
-              <input type="tel" class="form-control " id="phoneNumber" aria-describedby="phoneHelp" placeholder="1 (000) 000-0000">
-            </div>
-            <div class="form-group">
-              <label for="contactMessage">Message</label>
-              <textarea name="message" id="contactMessage" class="form-control col-lg" rows="7" ></textarea>
-            </div>
-            <button class="form-control btn btn-primary btn-outline-primary waves-effect mb-2">Send</button>
-
-          </form>
-        </div>
-      </div>
-  </section-->
 
   <!-- Footer -->
   <footer class="bg-light py-5">
