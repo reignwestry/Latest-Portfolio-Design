@@ -11686,22 +11686,41 @@ header.masthead h1 {
   margin: 20% 5% 0% 10%;
 }
 
+.paper > .row {
+  border: 1px dashed blue;
+}
+
 .left-box {
   background: darkblue;
-  height: 100%;
-  width: 40%;
+  margin: 0;
 }
 
 .left-box h3 {
   text-align: center;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .left-box h4 {
   text-align: center;
   color: white;
   font-size: .8rem;
+  margin: 0;
+}
+
+.right-box {
+  margin-top: 0;
+  margin-left: 39%;
+  background: green;
+}
+
+.address-box ul {
+  margin: 0;
+}
+
+.address-box ul li {
+  margin: 0;
 }
 
 .address {
@@ -11716,9 +11735,14 @@ header.masthead h1 {
   color: teal;
 }
 
+.address ul > li {
+  text-decoration: none;
+  list-style: none;
+}
+
 .sub-categories {
   width: 100%;
-  border: 1px dashed white;
+  height: 31vh;
 }
 
 .sub-categories h2 {
@@ -11730,5 +11754,19 @@ header.masthead h1 {
 
 .sub-categories ul {
   text-align: left;
+  margin: 0;
+}
+
+.sub-categories ul li {
+  font-size: .9rem;
+  color: #D4AF37;
+}
+
+.constructionOne {
+  border: 1px dashed red;
+}
+
+.constructionTwo {
+  border: 1px dotted orange;
 }
 /*# sourceMappingURL=creative-modified.css.map */
