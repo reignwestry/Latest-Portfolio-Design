@@ -12,3 +12,6 @@ config
 description
 HEAD
 payments/
+react-portfolio/
+.htaccess
+02-Expressjs-REMOTE-SERVER-TEMPLATE/
