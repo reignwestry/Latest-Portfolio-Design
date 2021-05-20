@@ -7,4 +7,7 @@ vendor/
 projects/
 tester3/
 webdev2/
-schoolwork/
+schoolwork/.htaccess
+config
+description
+HEAD
