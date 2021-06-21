@@ -1,0 +1,39 @@
+// Styling for the masthead
+
+header.masthead {
+
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../img/background/blur-cellphone-close-up-196644.jpg');
+  position: relative;
+  transform-style: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  h1 {
+    font-size: 2.25rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.text-highlight{
+  color: $green;
+}
+

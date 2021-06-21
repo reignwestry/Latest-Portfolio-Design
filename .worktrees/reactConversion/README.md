@@ -1,0 +1,12 @@
+#### PORTFOLIO 
+
+### PROJECT DESCRIPTION
+    A Showcase of all my latest projects.
+
+    SETUP AUTO COMMIT
+
+
+
+### UPDATES
+    0.1
+    .9  CONDENSED & CONVERTED ALL VERSIONS TO WORKTREES

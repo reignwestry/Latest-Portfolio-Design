@@ -1,0 +1,27 @@
+// Contact Section
+.contact {
+
+    .portfolio-selfie {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.contact-form{
+    width: 600px;
+    border: 1px dashed red;
+    label{
+        margin: 3%;
+        margin-left: 2%;
+    }
+    textarea, input {
+        width: 90%;
+        padding: 2%;
+        margin: 2%;
+        margin-top: 1px;
+    }
+    textarea{
+        height: 300px;
+    }
+}

@@ -1,0 +1,17 @@
+MockUp_Ideas/
+.vscode/
+.idea/
+payments/
+vendor/
+*.iml
+projects/
+tester3/
+webdev2/
+schoolwork/.htaccess
+config
+description
+HEAD
+payments/
+react-portfolio/
+.htaccess
+02-Expressjs-REMOTE-SERVER-TEMPLATE/

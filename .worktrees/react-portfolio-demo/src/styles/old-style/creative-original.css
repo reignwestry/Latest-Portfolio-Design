@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *   ,
+ * 3 |   box-shadow: $box-shadow;
+ *   |               ^^^^^^^^^^^
+ *   '
+ *   _navbar.scss 3:15   @import
+ *   creative.scss 12:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502    box-shadow: $box-shadow;\a   \2502                ^^^^^^^^^^^\a   \2575 \a   _navbar.scss 3:15   @import\a   creative.scss 12:9  root stylesheet";
+}

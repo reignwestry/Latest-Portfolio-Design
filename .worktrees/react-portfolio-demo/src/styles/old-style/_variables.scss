@@ -1,0 +1,29 @@
+// Variables
+$box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+
+// Color overrides
+
+// Set a custom color
+//$green: #f4623a !default;
+$green: #14c40e !default;
+$brown: #5c4d42 !default;
+$white: #fff;
+
+
+// Set primary color to green
+$primary: $green !default;
+
+// Font overrides
+$font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+
+$font-family-serif: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+
+$font-family-base: $font-family-serif !default;
+
+$headings-font-family: $font-family-sans-serif !default;
+
+// Custom variables
+$navbar-height: 72px;
+$font-weight-bold: 800;
+$gray-600: #586069;
+$gray-900: #24292e;
