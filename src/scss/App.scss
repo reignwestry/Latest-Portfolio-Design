@@ -3,7 +3,48 @@
     font-family: 'Great Vibes';
     src: local('Great Vibes'), url('./../font/GreatVibes-Regular.ttf') format('ttf');
     font-style:normal;
+
+    font-family: 'Elephant';
+    src: local('Elephant'), url('./../font/elephant.ttf')
+    format('ttf');
+    font-style:normal;
 }
+
+
+//Variables
+$FontOne: 'Great Vibes';
+$FontTwo: 'Elephant';
+$Primary: #489d65;
+$Secondary: #ffd700;
+$Tertiary: #000;
+$Fourth: #5a4942;
+
+
+//Mixins
+@mixin PrimaryFont {
+    font-family: $FontOne;
+    text-shadow: -1px -1px $Secondary, 2px 1.5px $Tertiary;
+    span{ color: $Primary}; 
+    color: $Fourth;
+    font-size: 3rem;
+
+}
+
+@mixin SecondaryFont {
+    font-family: $FontTwo;
+}
+
+@mixin HoverBtn {
+    &:hover {
+        font-size: 120%;
+        color: $Fourth;
+        text-shadow: -.5px -1px #ffd700, 2px 1.5px $Primary;
+        //todo ADD A BOUNCE ANIMATION
+        //todo suddle glow text shadown green to black to yellow
+        //todo ADD A slow green-yellow pulse glow shadow 
+    }
+}
+
 
 body{ 
     z-index: 1;
@@ -30,31 +71,35 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: rgba(0,0,0,0.3);
     .headerTitle {
-        border: 2px dashed orange;
+
         width: 30%; 
-        height: 5%;          
+        height: 5%;  
+        margin-left: 2%;
+        text-align: center;        
         h1{ 
             padding:0;
             margin: 0 auto;
             text-align: left;
-            font-family: 'Great Vibes';
+            @include PrimaryFont;
         }
     }
 
 
 }
-.menu{
+nav{
 
     height: 100%;
     width: 60%;
     margin: 0 10% 0 30%;
     padding: 0;
+    
 
     ul{
         display:flex;
         list-style-type: none;
-        border: 3px dashed blue;
+        // border: 3px dashed blue;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -63,19 +108,23 @@ header{
         justify-content: space-around;
 
         li{
-            border: 3px dashed purple;
+            // border: 3px dashed purple;
             color: blue;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             padding: .7%;
             width: 15%;
+            height: 100%;
             flex: 1 1 1;
-
+            font-size: 1.5rem;
+            font-family: 'Elephant';
+            @include HoverBtn;
 
             a{
-                color: white;
+                color: #000;
                 text-decoration: none;
+
 
              }
         }

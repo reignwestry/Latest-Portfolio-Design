@@ -1,37 +1,69 @@
-    import React, {Component} from 'react';
-    import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
     import "./scss/App.scss";
 
 
 import BackgroundImg from '../imgs/heroBackground.png';
 
+/*
+    todo FINISH MENU AND HERO SECTION
+    todo ADD the rest of the sections 
+    TODO ADD EXPRESSJS to run in server
 
 
+*/
+// COMPONENTS
 class Header extends React.Component {
     render() {
         return (
             <header>
                 <div className="headerTitle">
-                    <h1>Reign Westry</h1>
+                    <h1><span>Reign</span> Westry</h1>
                 </div>
                 
-                <Menu />
+                <Nav />
             </header>
         );
     }
 }
-class Menu extends React.Component {
+class Nav extends React.Component {
     render() {
         return (
-            <div className="menu">
-                <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Gallery</li>
-                    {/* todo <li>RESUME</li>  ADD LINK ONLY TO ABOUT PAGE */}
-                    <li>About</li>
-                </ul>
-            </div>
+            <Router>
+                
+                <nav>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/gallery">Gallery</Link></li>
+                        {/* todo <li>RESUME</li>  ADD LINK ONLY TO ABOUT PAGE */}
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                    
+                    <Switch>
+                        <Route path="/pages/services">
+                            <ServicesPage />
+                        </Route>
+                        <Route path="/pages/gallery">
+                            <GalleryPage />
+                        </Route>
+                        <Route path="/pages/about">
+                            <AboutPage />
+                        </Route>
+                        <Route path="/pages/contact">
+                            <ContactPage />
+                        </Route>
+                        <Route path="/pages/resume">
+                            <ResumePage />
+                        </Route>
+                        <Route path="/">   
+                        </Route>
+                    </Switch>
+                </nav>
+
+            </Router>
         );
     }
 }
@@ -92,7 +124,23 @@ const app = (
     </div>
 );
 
+//PAGES
+function ServicesPage() {
+    return <h2>Services</h2>;
+}
+function GalleryPage() {
+    return <h2>Gallery</h2>;
+}
+function AboutPage() {
+    return <h2>About</h2>;
+}
+function ResumePage() {
+    return <h2>Resume</h2>;
+}
 
+function ContactPage() {
+    return <h2>Contact</h2>;
+}
 
 
 
