@@ -1,0 +1,105 @@
+//IMPORTS
+@font-face {
+    font-family: 'Great Vibes';
+    src: local('Great Vibes'), url('./../font/GreatVibes-Regular.ttf') format('ttf');
+    font-style:normal;
+}
+
+body{ 
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.App{
+    // background-color: brown;
+    margin: 0;;
+    padding: 0;
+}
+
+header{ 
+    position: fixed;
+    z-index: 99;
+    border: 1px dashed green;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .headerTitle {
+        border: 2px dashed orange;
+        width: 30%; 
+        height: 5%;          
+        h1{ 
+            padding:0;
+            margin: 0 auto;
+            text-align: left;
+            font-family: 'Great Vibes';
+        }
+    }
+
+
+}
+.menu{
+
+    height: 100%;
+    width: 60%;
+    margin: 0 10% 0 30%;
+    padding: 0;
+
+    ul{
+        display:flex;
+        list-style-type: none;
+        border: 3px dashed blue;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        justify-content: space-around;
+
+        li{
+            border: 3px dashed purple;
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: .7%;
+            width: 15%;
+            flex: 1 1 1;
+
+
+            a{
+                color: white;
+                text-decoration: none;
+
+             }
+        }
+    }
+}
+
+
+section{
+    border: 1px dashed black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heroImg{
+    background:url('../../imgs/heroBackground.png') no-repeat center ;
+    background-size: cover;
+}
+.services{
+
+}
+.gallery{
+    background-color: tan;
+
+}
+.about{
+
+}

@@ -2,6 +2,7 @@
    
     const path = require('path');
     const HtmlWebpackPlugin = require('html-webpack-plugin');
+    const { webpack } = require('webpack');
 
     module.exports = {
     // the output bundle won't be optimized for production but suitable for development
@@ -29,18 +30,37 @@
                 }
             },
             {
-        test: /\.s[ac]ss$/i,
-        use: [
-                // Creates `style` nodes from JS strings
-                "style-loader",
-                // Translates CSS into CommonJS
-                "css-loader",
-                // Compiles Sass to CSS
-                "sass-loader",
-            ],
-            }
+                test: /\.s[ac]ss$/i,
+                use: [
+                        // Creates `style` nodes from JS strings
+                        "style-loader",
+                        // Translates CSS into CommonJS
+                        "css-loader",
+                        // Compiles Sass to CSS
+                        "sass-loader",
+                    ],
+            },
+            // LOADS IMAGES
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                type: 'asset/resource'
+
+            },
+            // LOADS ANY TYPE OF FILE including fonts
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
+                
         ]
     },
-    // add a custom index.html as the template
-    plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
+
+        // add a custom index.html as the template
+        plugins:
+            [
+                new HtmlWebpackPlugin({
+                    template: path.resolve(__dirname, 'src', 'index.html'),
+                    filename: 'index.html'
+                })
+            ]
     };
