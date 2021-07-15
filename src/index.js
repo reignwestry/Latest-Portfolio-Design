@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-    import "./scss/App.scss";
+
+import "./scss/App.scss";
+
+//Service Icons
+import WebDesignImg from './../imgs/serviceIcons/designs.png';
+import AppDesignImg from './../imgs/serviceIcons/iosANDandroid.png';
+import MaintenanceImg from './../imgs/serviceIcons/Layer 1.png';
+import UpdateImg from './../imgs/serviceIcons/multiple-design.png';
 
 
 import BackgroundImg from '../imgs/heroBackground.png';
@@ -67,11 +74,17 @@ class Nav extends React.Component {
         );
     }
 }
+
+//body
 class HeroImage extends React.Component{
     render() {
         return (
-            <section className="heroImg">
+            <section className="heroSection">
                 <h2>HeroImage</h2>
+                <div className="heroP">
+                    <p>Hi, I'm Reign.</p>
+                    <p>I develop & design web and mobile app solutions.</p>
+                </div>
             </section>
         );
     }
@@ -90,8 +103,49 @@ class About extends React.Component {
 class Services extends React.Component {
     render() {
         return (
-            <section>
-                <h2>Services</h2>
+            <section className="servicesSection">
+                <div className="servicesHeader">
+                    <h2>Services</h2>
+                </div>
+                <div className="servicesList">
+                    <div className="serviceBox">
+                        <h3>Web Design</h3>
+                        <div className="servicePara">
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                        </div>
+                        <div className="ServiceImage">
+                            <img src={WebDesignImg} alt="Web Design Icon"/>
+                        </div>
+                    </div>
+                    <div className="serviceBox">
+                        <h3>App Design</h3>
+                        <div className="servicePara">
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                        </div>
+                        <div className="ServiceImage">
+                            <img src={AppDesignImg} alt=" App Design Icon"/>
+                        </div>
+                    </div>
+                    <div className="serviceBox">
+                        <h3>Maintenance</h3>
+                        <div className="servicePara">
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                        </div>
+                        <div className="ServiceImage">
+                            <img src={MaintenanceImg} alt=" Maintenance Icon"/>
+                        </div>
+                    </div>
+                    <div className="serviceBox">
+                                                <h3>Title</h3>
+                        <div className="servicePara">
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                        </div>
+                        <div className="ServiceImage">
+                            <img src="#" alt="Icon"/>
+                        </div>
+                    </div>
+
+                </div>
             </section>
         )
     }

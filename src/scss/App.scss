@@ -37,8 +37,8 @@ $Fourth: #5a4942;
 @mixin HoverBtn {
     &:hover {
         font-size: 120%;
-        color: $Fourth;
-        text-shadow: -.5px -1px #ffd700, 2px 1.5px $Primary;
+        color: $Secondary;
+        text-shadow: -.5px -1px $Fourth, 2px 1.5px $Primary;
         //todo ADD A BOUNCE ANIMATION
         //todo suddle glow text shadown green to black to yellow
         //todo ADD A slow green-yellow pulse glow shadow 
@@ -65,13 +65,15 @@ body{
 header{ 
     position: fixed;
     z-index: 99;
-    border: 1px dashed green;
     margin: 0;
     padding: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     background-color: rgba(0,0,0,0.3);
+    border: 1px dashed red;
+    
+
     .headerTitle {
 
         width: 30%; 
@@ -80,8 +82,8 @@ header{
         text-align: center;        
         h1{ 
             padding:0;
-            margin: 0 auto;
-            text-align: left;
+            margin: 0;
+            text-align: center;
             @include PrimaryFont;
         }
     }
@@ -99,7 +101,6 @@ nav{
     ul{
         display:flex;
         list-style-type: none;
-        // border: 3px dashed blue;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -108,7 +109,6 @@ nav{
         justify-content: space-around;
 
         li{
-            // border: 3px dashed purple;
             color: blue;
             text-align: center;
             text-decoration: none;
@@ -133,20 +133,97 @@ nav{
 
 
 section{
-    border: 1px dashed black;
+    margin: 0;
+    padding: 0;
     height: 100vh;
     width: 100vw;
 }
 
-.heroImg{
+.heroSection{
     background:url('../../imgs/heroBackground.png') no-repeat center ;
     background-size: cover;
-}
-.services{
 
+    .heroP{
+        color: $Secondary;
+        text-shadow: -2px -2px $Tertiary;
+        font-size: 3rem;
+        width: 20%;
+        padding: 2%;
+        margin: 2%;
+        font-weight: bolder;
+
+    }
+}
+.servicesSection{
+    margin: 0;
+    padding: 0;
+
+
+    .servicesHeader{
+        width: 100%;
+        background: blue;
+        background: url('../../imgs/Services-header.png') no-repeat center;
+        background-size: cover;
+        height: 40vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+
+        h2{
+            font-size: 6rem;
+            margin: 0;
+            margin-top: 10%;
+            padding: 0;
+            text-align: center;
+            justify-self: center;
+            font-family: $FontOne;
+            color: $Primary;
+            text-shadow: -1px -1px $Secondary, 2px 1.5px $Tertiary;
+        }
+    }
+
+    .servicesList{
+        width: 100%;
+        height: 60vh;
+        border: 1px dashed red;
+        display:flex;
+        flex-direction: row;
+
+        .serviceBox{
+            border: 1px dashed black;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                border: 1px dashed red;
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .servicePara{
+                width: 100%;
+                height: 40%;
+                border: 1px dashed green;
+
+                p{
+                    justify-self: center;
+                    margin: 3%;
+                    font-size: 1.3rem;
+                }
+            }
+
+
+        }
+
+
+    }
 }
 .gallery{
     background-color: tan;
+
 
 }
 .about{
