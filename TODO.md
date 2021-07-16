@@ -4,3 +4,4 @@
     folder path: /public_html/react_projects
 2) as
 
+post-receive TEST
