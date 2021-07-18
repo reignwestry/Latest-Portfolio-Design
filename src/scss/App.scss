@@ -24,9 +24,10 @@ $Fourth: #5a4942;
 @mixin PrimaryFont {
     font-family: $FontOne;
     text-shadow: -1px -1px $Secondary, 2px 1.5px $Tertiary;
-    span{ color: $Primary}; 
     color: $Fourth;
     font-size: 3rem;
+
+    span{ color: $Primary}; 
 
 }
 
@@ -52,12 +53,10 @@ body{
     padding: 0;
     width: 100vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .App{
-    // background-color: brown;
+
     margin: 0;;
     padding: 0;
 }
@@ -66,18 +65,19 @@ header{
     position: fixed;
     z-index: 99;
     margin: 0;
+    margin-top: 0;
     padding: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     background-color: rgba(0,0,0,0.3);
-    border: 1px dashed red;
+
     
 
     .headerTitle {
-
         width: 30%; 
         height: 5%;  
+        margin: 0;
         margin-left: 2%;
         text-align: center;        
         h1{ 
@@ -85,13 +85,13 @@ header{
             margin: 0;
             text-align: center;
             @include PrimaryFont;
+            
         }
     }
 
 
 }
 nav{
-
     height: 100%;
     width: 60%;
     margin: 0 10% 0 30%;
@@ -119,11 +119,14 @@ nav{
             flex: 1 1 1;
             font-size: 1.5rem;
             font-family: 'Elephant';
+            margin: 0;
             @include HoverBtn;
 
             a{
                 color: #000;
                 text-decoration: none;
+                margin: 0;
+
 
 
              }
