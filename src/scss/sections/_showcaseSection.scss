@@ -1,0 +1,50 @@
+@use './../components/colors' as c;
+@use './../components/mixins' as m;
+.showcase {
+    border: 1px dashed blue;
+    margin: 0;
+
+    h2{
+        margin: 0 auto;
+        text-align: center;
+        height: 10vh;
+    }
+
+    .showcaseGallery{
+        background-color: c.$Tertiary;
+        height: 70vh;
+
+        .showcaseRow {
+            display: flex;
+            flex-direction: row;
+            width: 98%;
+            height: 45%;
+            margin: 0;
+            border: 1px dashed yellow;
+        }
+    }
+
+}
+
+
+.showcaseImgBox{
+    width: 25%;
+    height: 90%;
+    margin: 1%;
+    background: c.$Secondary;
+    position: relative;
+
+    @include m.showcaseHover;
+
+
+
+}
+
+//# Overlay
+.projectThumb {
+    opacity:1;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,90 @@
+// @use"/fonts" as f;
+@use "./colors" as c;
+@use "./mixins" as m;
+header{ 
+    position: fixed;
+    z-index: 99;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.35);
+    // border: 1px dashed white;
+
+    
+
+    .headerTitle {
+        width: 30%; 
+        height: 5%;  
+        margin: 0;
+        margin-left: 2%;
+        text-align: center;  
+        // border: 1px dashed blue;   
+
+        h1{ 
+            padding:0;
+            margin: 0;
+            text-align: center;
+            @include m.PrimaryFont;
+            
+        }
+
+        
+    }
+}
+
+//# NAV
+nav{
+    height: 100%;
+    width: 60%;
+    margin: 0 10% 0 30%;
+    padding: 0;
+    border: 1px dashed lightgreen;
+    
+
+    ul{
+        display:flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        justify-content: space-around;
+
+        li{
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: .7%;
+            width: 15%;
+            height: 100%;
+            flex: 1 1 1;
+            font-size: 1.5rem;
+            font-family: 'Elephant';
+            margin: 0;
+            @include m.HoverBtn;
+
+            a{
+                color: #000;
+                text-decoration: none;
+                margin: 0;
+
+
+                &:hover{
+                    color: c.$Secondary;
+                }
+
+                &:active{
+                    color: c.$Tertiary;
+                }
+             }
+
+             
+        }
+    }
+}
+

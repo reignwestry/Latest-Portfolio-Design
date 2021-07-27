@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Great Vibes';
+    src: local('Great Vibes'), url('./../font/GreatVibes-Regular.ttf') format('ttf');
+    font-style:normal;
+
+    font-family: 'Elephant';
+    src: local('Elephant'), url('./../font/elephant.ttf')
+    format('ttf');
+    font-style:normal;
+}
+
+$FontOne: 'Great Vibes';
+$FontTwo: 'Elephant';

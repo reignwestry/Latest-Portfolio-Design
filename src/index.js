@@ -10,7 +10,7 @@ import AppDesignImg from './../imgs/serviceIcons/iosANDandroid.png';
 import MaintenanceImg from './../imgs/serviceIcons/Layer 1.png';
 import UpdateImg from './../imgs/serviceIcons/multiple-design.png';
 
-
+import dumbyImg from './../imgs/dumby/04-thumbnail.jpg';
 import BackgroundImg from '../imgs/heroBackground.png';
 
 /*
@@ -80,7 +80,6 @@ class HeroImage extends React.Component{
     render() {
         return (
             <section className="heroSection">
-                <h2>HeroImage</h2>
                 <div className="heroP">
                     <p>Hi, I'm Reign.</p>
                     <p>I develop & design web and mobile app solutions.</p>
@@ -90,6 +89,7 @@ class HeroImage extends React.Component{
     }
 }
 
+//# About Section
 class About extends React.Component {
     render(){
         return(
@@ -100,6 +100,7 @@ class About extends React.Component {
     }
 }
 
+//# SERVICES SECTION
 class Services extends React.Component {
     render() {
         return (
@@ -111,7 +112,7 @@ class Services extends React.Component {
                     <div className="serviceBox">
                         <h3>Web Design</h3>
                         <div className="servicePara">
-                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;sLorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
                         </div>
                         <div className="ServiceImage">
                             <img src={WebDesignImg} alt="Web Design Icon"/>
@@ -120,7 +121,7 @@ class Services extends React.Component {
                     <div className="serviceBox">
                         <h3>App Design</h3>
                         <div className="servicePara">
-                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;sLorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
                         </div>
                         <div className="ServiceImage">
                             <img src={AppDesignImg} alt=" App Design Icon"/>
@@ -129,19 +130,19 @@ class Services extends React.Component {
                     <div className="serviceBox">
                         <h3>Maintenance</h3>
                         <div className="servicePara">
-                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;sLorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
                         </div>
                         <div className="ServiceImage">
                             <img src={MaintenanceImg} alt=" Maintenance Icon"/>
                         </div>
                     </div>
                     <div className="serviceBox">
-                                                <h3>Title</h3>
+                        <h3>Updates</h3>
                         <div className="servicePara">
-                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
+                            <p>Lorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;sLorem Ipsume alnk alnslknaslknasndflans;dnfalsdjf;akjsdlfkja;skjf;a sjfa jsdf;kaj;ds fkja s;dfj a;skjdf ;akjs df;s</p>
                         </div>
                         <div className="ServiceImage">
-                            <img src="#" alt="Icon"/>
+                            <img src={UpdateImg} alt="Icon"/>
                         </div>
                     </div>
 
@@ -151,13 +152,44 @@ class Services extends React.Component {
     }
 }
 
-class Gallery extends React.Component {
+//# SHOWCASE SECTION
+class Showcase extends React.Component {
     render() {
         return (
-            <section>
-                <h2>Showcase</h2>
-                <div className="showcase">
-                    <div></div>
+            <section className="showcase">
+                {/* <h2>Showcase</h2> */}
+                <div className="showcaseGallery">
+                    <div class="showcaseRow">
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb" alt="#" />
+                            <div className="projectDataBox">
+                                <div className="projectData">ProjectName</div>
+                            </div>
+                        </div>
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                    </div>
+                    <div class="showcaseRow">
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                        <div class="showcaseImgBox">
+                            <img src={dumbyImg} className="projectThumb"  alt="#"/>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -173,7 +205,7 @@ const app = (
         <Header />
         <HeroImage />
         <Services />
-        <Gallery />
+        <Showcase />
         <h1>REACT is working</h1>
     </div>
 );
@@ -191,7 +223,6 @@ function AboutPage() {
 function ResumePage() {
     return <h2>Resume</h2>;
 }
-
 function ContactPage() {
     return <h2>Contact</h2>;
 }

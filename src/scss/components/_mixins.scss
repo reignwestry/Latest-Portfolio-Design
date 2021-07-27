@@ -1,0 +1,33 @@
+@use './fonts'as f;
+@use './colors' as c;
+//Mixins
+@mixin PrimaryFont {
+    font-family: f.$FontOne;
+    text-shadow: -1px -1px c.$Secondary, 2px 1.5px c.$Tertiary;
+    color: c.$Fourth;
+    font-size: 3rem;
+
+    span{ color: c.$Primary}; 
+
+}
+
+@mixin SecondaryFont {
+    font-family: $FontTwo;
+}
+
+@mixin HoverBtn {
+    &:hover {
+        font-size: 120%;
+        color: c.$Secondary;
+        text-shadow: -.5px -1px c.$Fourth, 2px 1.5px c.$Primary;
+        //todo ADD A BOUNCE ANIMATION
+        //todo suddle glow text shadown green to black to yellow
+        //todo ADD A slow green-yellow pulse glow shadow 
+    }
+}
+
+@mixin showcaseHover {
+    &:hover{
+        background-color: green;
+    }
+}
