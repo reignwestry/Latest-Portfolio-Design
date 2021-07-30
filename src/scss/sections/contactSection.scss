@@ -1,0 +1,112 @@
+//Contact Section
+
+
+@use './../components/colors' as c;
+@use './../components/fonts' as f;
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .contactContainer{
+        flex-direction: row;
+        flex-flow: 1 1;
+        width: 80vw;
+        height: 95vh;
+        margin: 0 auto;
+    }
+
+}
+
+.contactForm{
+    background-color: c.$Fourth;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 95%;
+    margin: 1%;
+    box-shadow: -2px -1px 2px 4px rgba(30, 130, 76, 0.5);
+    color: c.$Secondary;
+    
+
+    .namebox {
+        justify-content: space-around;
+        height: 5%;
+        text-align:center;
+        align-items: flex-end;
+        margin-top: 4%;
+        font-weight: bold;
+
+        label{
+            margin-left: 1%;
+        }
+
+        input{
+            height: 100%;
+            font-family: f.$FontTwo;
+        }
+    }
+
+    label{
+        font-family: f.$FontOne;
+        font-size: 1.4rem;
+        margin-top: 2%;
+        font-weight: bold;
+        margin-left: 2%;
+        letter-spacing: 1.2px;
+
+        span{
+            color: red;
+            text-shadow: -1 -2px black;
+            margin-left: 3px;
+        }
+
+        
+        
+    }
+
+    input{
+        margin-right: 2%;
+        height: 5%;
+        color: c.$Tertiary;
+
+        &:visited{
+            color: c.$Primary;
+        }
+
+        }
+    select{
+        margin: 0 2%;
+        height: 5%;
+        width: 40%;
+        font-family: f.$FontTwo;
+    }
+
+    .potentialClientEmail, .potentialClientPhone{
+        width: 80%;
+        margin-left: 2%;
+        font-family: f.$FontTwo;
+        letter-spacing: 1.2px;
+    }
+
+    textarea{
+        height: 40%;
+        margin: 0 2%;
+        font-family: f.$FontTwo;
+    }
+
+    button{
+        height: 8%;
+        width: 25%;
+        text-align: center;
+        margin: 3% auto;
+
+        //todo ADD a flashing animation that stops after message is sent
+    }
+}

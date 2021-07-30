@@ -1,7 +1,9 @@
 @use './../components/colors' as c;
 @use './../components/mixins' as m;
+@use './../components/fonts' as f;
 .showcase {
     border: 1px dashed blue;
+    height: 66vh;
     margin: 0;
 
     h2{
@@ -11,7 +13,6 @@
     }
 
     .showcaseGallery{
-        background-color: c.$Tertiary;
         height: 70vh;
 
         .showcaseRow {
@@ -20,7 +21,7 @@
             width: 98%;
             height: 45%;
             margin: 0;
-            border: 1px dashed yellow;
+            // border: 1px dashed yellow;
         }
     }
 
@@ -34,7 +35,19 @@
     background: c.$Secondary;
     position: relative;
 
-    @include m.showcaseHover;
+    // @include m.showcaseHover;
+    &:hover .projectThumb{
+        opacity: 0.3;
+          
+    }
+
+    &:hover .projectDataBox{
+        opacity: 1;
+    }
+
+    
+
+
 
 
 
@@ -46,5 +59,53 @@
     z-index: 0;
     width: 100%;
     height: 100%;
+
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
+.projectDataBox {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: c.$Fourth;
+    left: 50%;
+    top: 50%;
+    margin-bottom: auto;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        color: c.$Primary;
+        margin: 1%;
+        height: 20%;
+        border: 1px dashed red;
+        text-align: center;
+        font: f.$FontOne;
+    }
+
+    p{
+        border: 1px dashed blue;
+        height: 80%;
+        margin: 1%;
+        font: f.$FontTwo;
+
+    }
+
+    .projectTypeIcon{
+        height: 28%;
+        margin: 0;
+        border: yellow;
+        background: green;
+
+        // TODO ALL ICONS IN GREEN with black shadow
+        // TODO ANDRIOD, REACT, PHP, WEBSITE ICON
+    }
+
+
+}
