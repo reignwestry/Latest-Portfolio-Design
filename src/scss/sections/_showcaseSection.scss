@@ -2,7 +2,6 @@
 @use './../components/mixins' as m;
 @use './../components/fonts' as f;
 .showcase {
-    border: 1px dashed blue;
     height: 66vh;
     margin: 0;
 
@@ -21,7 +20,6 @@
             width: 98%;
             height: 45%;
             margin: 0;
-            // border: 1px dashed yellow;
         }
     }
 
@@ -35,7 +33,6 @@
     background: c.$Secondary;
     position: relative;
 
-    // @include m.showcaseHover;
     &:hover .projectThumb{
         opacity: 0.3;
           
@@ -59,7 +56,6 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -84,13 +80,11 @@
         color: c.$Primary;
         margin: 1%;
         height: 20%;
-        border: 1px dashed red;
         text-align: center;
         font: f.$FontOne;
     }
 
     p{
-        border: 1px dashed blue;
         height: 80%;
         margin: 1%;
         font: f.$FontTwo;

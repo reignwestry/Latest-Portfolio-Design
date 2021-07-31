@@ -25,13 +25,11 @@
 }
 
 .contactForm{
-    background-color: c.$Fourth;
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 95%;
     margin: 1%;
-    box-shadow: -2px -1px 2px 4px rgba(30, 130, 76, 0.5);
     color: c.$Secondary;
     
 
@@ -50,6 +48,11 @@
         input{
             height: 100%;
             font-family: f.$FontTwo;
+            background-color: rgba(90, 73, 66, 0.57);
+            border-style: transparent;
+            border-bottom-style:solid c.$Fourth;
+            border-top-style: transparent;
+            color: c.$Primary;
         }
     }
 
@@ -74,7 +77,12 @@
     input{
         margin-right: 2%;
         height: 5%;
-        color: c.$Tertiary;
+        color: c.$Primary;
+        
+        background: rgba(90, 73, 66, 0.57);
+        border-style: transparent;
+        border-bottom-style:solid c.$Fourth;
+        border-top-style: transparent;
 
         &:visited{
             color: c.$Primary;
@@ -86,6 +94,8 @@
         height: 5%;
         width: 40%;
         font-family: f.$FontTwo;
+        background: rgba(90, 73, 66, 0.57);
+        color: c.$Primary;
     }
 
     .potentialClientEmail, .potentialClientPhone{
@@ -93,12 +103,17 @@
         margin-left: 2%;
         font-family: f.$FontTwo;
         letter-spacing: 1.2px;
+        color: c.$Primary;
     }
 
     textarea{
         height: 40%;
         margin: 0 2%;
         font-family: f.$FontTwo;
+        color: c.$Primary;
+        background:rgba(90, 73, 66, 0.57);
+        border-style: transparent;
+        border-top-style: transparent;
     }
 
     button{
@@ -106,6 +121,14 @@
         width: 25%;
         text-align: center;
         margin: 3% auto;
+        color:  rgba(90, 73, 66, 0.57);
+        font-family: f.$FontOne;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: -2px -2px c.$Secondary;
+        background-color:  c.$Primary;
+        border-radius: 15% 15%;
+        box-shadow: -1px 4px c.$Secondary, lighter;
 
         //todo ADD a flashing animation that stops after message is sent
     }

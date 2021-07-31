@@ -1,0 +1,58 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+//# NAV
+nav{
+    height: 100%;
+    width: 60%;
+    margin: 0 10% 0 30%;
+    padding: 0;
+    
+
+    ul{
+        display:flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        justify-content: space-around;
+
+        li{
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: .7%;
+            width: 15%;
+            height: 100%;
+            flex: 1 1 1;
+            font-size: 1.5rem;
+            font-family: 'Elephant';
+            margin: 0;
+
+            @include m.HoverBtn;
+
+            a{
+                text-shadow: -1px 2px c.$Tertiary;
+                color: c.$Secondary;
+                text-decoration: none;
+                margin: 0;
+
+
+                &:hover{
+                    color: c.$Primary;
+                    text-shadow: -1px 1px c.$Secondary;
+                }
+
+                &:active{
+                    color: c.$Tertiary;
+                }
+             }
+
+             
+        }
+    }
+}
