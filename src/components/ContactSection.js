@@ -10,8 +10,8 @@ class ContactSection extends React.Component {
                     <Form />
                 </div>
 
-                <div>
-                    
+                <div className="contactMessage">
+                    <h2>I am always </h2>
                 </div>
 
             </section>
