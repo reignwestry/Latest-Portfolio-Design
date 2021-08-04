@@ -1,34 +1,37 @@
 import React from 'react';
 
-class Form extends React.Component{
+
+const textareaPlaceholder = "Tell me about your problems and I will send you my ideas of solutions";
+
+class contactForm extends React.Component{
     render() {
         return (
             <form className="contactForm">
                         
                         <div className="namebox">
-                            <label for="potentialClientFname">
+                            <label htmlFor="potentialClientFname">
                                 First Name<span>*</span>
                             </label>
                             <input type="text" className="potentialClientFname" placeholder="Joe"/>
                         
-                            <label for="potentialClientLname">
+                            <label htmlFor="potentialClientLname">
                                 Last Name<span>*</span>
                             </label>
                             <input type="text"  className="potentialClientLname" placeholder="Client" />
                         </div>
 
                         
-                        <label for="potentialClientEmail">
+                        <label htmlFor="potentialClientEmail">
                             Email<span>*</span>
                         </label>
                         <input type="email" className="potentialClientEmail" placeholder="asldkfj@gopro.com" />
                         
-                        <label for="potentialClientPhone">
+                        <label htmlFor="potentialClientPhone">
                             Phone
                         </label>
                         <input type="tel" className="potentialClientPhone" placeholder="(000-000-0000)" />
                         
-                        <label for="potentialClientEmail">
+                        <label htmlFor="potentialClientEmail">
                             Message Type<span>*</span>
                         </label>
 
@@ -40,10 +43,10 @@ class Form extends React.Component{
                             <option>Other</option>
                         </select>
                         
-                        <label for="NewClientMessage">
+                        <label htmlFor="NewClientMessage">
                             Message <span>*</span>
                         </label>
-                        <textarea className="NewClientMessage" placeholder="Tell me about your problems and I will send you my ideas of solutions"></textarea>
+                        <textarea className="NewClientMessage" placeholder={textareaPlaceholder}></textarea>
 
                         <button>Send</button>
                         
@@ -52,4 +55,4 @@ class Form extends React.Component{
         );
     }
 }
-export default Form;
+export default contactForm;

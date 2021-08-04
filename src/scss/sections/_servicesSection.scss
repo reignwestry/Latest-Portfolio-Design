@@ -8,8 +8,8 @@
 
     .servicesHeader{
         width: 100%;
-        background: blue;
-        background: url('../../imgs/Services-header.png') no-repeat center;
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         height: 40vh;
         margin: 0;

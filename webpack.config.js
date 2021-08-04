@@ -54,7 +54,9 @@
                 
         ]
     },
-
+        devServer: {
+            historyApiFallback: true,
+        },
         // add a custom index.html as the template
         plugins:
             [

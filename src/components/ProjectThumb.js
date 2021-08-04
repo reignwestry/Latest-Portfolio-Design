@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import dumbyImg from './../../imgs/dumby/04-thumbnail.jpg';
+import dumbyImg from './../imgs/dumby/04-thumbnail.jpg';
 
 class ProjectThumb extends React.Component{
     render() {
         return (
             <div className="showcaseImgBox">
-                <img src={dumbyImg} className="projectThumb" alt="#" />
+                <img src={dumbyImg} className="projectThumb" alt="Project Short Desc" />
                 <div className="projectDataBox">
                     <div className="projectData">
                         <h3>ProjectName</h3>
