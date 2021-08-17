@@ -29,9 +29,10 @@ nav{
             width: 15%;
             height: 100%;
             flex: 1 1 1;
-            font-size: 1.5rem;
+            font-size: 145%;
             font-family: 'Elephant';
             margin: 0;
+            justify-items: space-around;
 
             @include m.HoverBtn;
 

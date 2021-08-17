@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //# Pages
@@ -14,16 +13,20 @@ import NotFoundPage from './../pages/NotFoundPage';
 import Header from './../components/Header';
 import HeroSection from './../components/HeroSection';
 
+//# PROPS (STATIC DATA)
+let titleFname = "Reign";
+let titleLname = "Westry";
+
 //Stateless Function
 const AppRouter = () => (
     <BrowserRouter>
         
-        <Header />
+        <Header titleFname={titleFname} titleLname={titleLname} />
         <HeroSection />
         
         <Switch>
 
-            <Route path="/" component={HomePage} exact={true} />
+            <Route path="/" component={HomePage} exact />
                 
             <Route path="/services" component={ServicePage} />
 

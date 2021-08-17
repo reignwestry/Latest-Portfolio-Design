@@ -1,9 +1,15 @@
 # REACT PORTFOLIO
 
-# # DESCRIPTION
+## DESCRIPTION
+
     A  starter template for react, expressjs builds.
 
-    portfolio:~/public_html/react/.git
+### Technologies
 
+    * REACTJS(SCRATCH)
+    * HTML
+    * Dart SCSS
 
-    a
+#### VERSION
+
+    1.0

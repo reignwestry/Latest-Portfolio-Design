@@ -3,11 +3,11 @@ import Nav from './Nav';
 
 
 class Header extends Component{
-    render(){
+    render() {
         return (
             <header>
                 <div className="headerTitle">
-                    <h1><span>Reign</span> Westry</h1>
+                    <h1><span>{this.props.titleFname}</span>{this.props.titleLname}</h1>
                 </div>
                     
                 <Nav />
