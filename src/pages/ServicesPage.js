@@ -7,7 +7,6 @@ class ServicesPage extends Component {
     render() {
         return (
             <div>
-                <h2>Services Page</h2>
                 <ServicesSection />
                 <ContactSection />
                 <FooterSection />

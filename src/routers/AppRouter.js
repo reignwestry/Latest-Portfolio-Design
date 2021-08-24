@@ -38,6 +38,10 @@ const AppRouter = () => (
 
             <Route path="/resume" component={ResumePage} />
                 
+            <Route path='/github' component={() => { window.location.href = 'https://github.com/reignwestry/'; return null}} />
+            
+            <Route path='/linkedin' component={() => {window.location.href = 'https://www.linkedin.com/in/reignwestry/'; return null;}} />
+            
             <Route component={NotFoundPage} />
 
         </Switch>
