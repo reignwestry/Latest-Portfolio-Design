@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 //# Components
-import ShowcaseSection from './../components/Showcase';
+import ShowcaseSection from '../components/ShowcaseSection';
 import ServicesSection from './../components/ServicesSection';
 import ContactSection from './../components/ContactSection';
 import FooterSection from './../components/FooterSection';

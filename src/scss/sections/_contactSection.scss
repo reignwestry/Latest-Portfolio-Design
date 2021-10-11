@@ -1,0 +1,66 @@
+//Contact Section
+
+@forward './../components/form';
+@use './../components/colors' as c;
+@use './../components/fonts' as f;
+@use './../components/mixins' as m;
+
+.contactSection{
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .backgroundScreen{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0,0,0,0.5);
+
+    }
+
+    .contactContainer{
+        flex-direction: column;
+        //flex-flow: 1 1;
+        width: 48%;
+        height: 79.7vh;
+        margin: 0;
+    }
+    .contactSecColumn{
+        color: blue;
+        width: 50%;
+        margin: 0;
+    }
+
+}
+
+//Greeting Section
+.greetingBox{
+    width: 90%;
+    height: 40vh;
+    color: white;
+    margin: 2%;
+
+    h2{
+        margin: 2%;
+
+        span{
+            font-size: 150%;
+            @include m.PrimaryFont;
+        }
+    }
+    p{
+        font-size: 120%;
+        width: 80%;
+        margin: 2%;
+
+
+    }
+
+}

@@ -1,0 +1,589 @@
+body {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: local("Great Vibes"), url("./../font/GreatVibes-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-family: "Elephant";
+  src: local("Elephant"), url("./../font/elephant.ttf") format("ttf");
+  font-style: normal;
+}
+nav {
+  height: 100%;
+  width: 60%;
+  margin: 0 10% 0 30%;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  justify-content: space-around;
+}
+nav ul li {
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7%;
+  width: 15%;
+  height: 100%;
+  flex: 1 1 1;
+  font-size: 145%;
+  font-family: "Elephant";
+  margin: 0;
+  justify-items: space-around;
+}
+nav ul li:hover {
+  font-size: 120%;
+  color: #ffd700;
+  text-shadow: -0.5px -1px #5a4942, 2px 1.5px #489d65;
+}
+nav ul li a {
+  text-shadow: -1px 2px #000;
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0;
+}
+nav ul li a:hover {
+  color: #489d65;
+  text-shadow: -1px 1px #ffd700;
+}
+nav ul li a:active {
+  color: #000;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+header .headerTitle {
+  width: 30%;
+  height: 5%;
+  margin: 0;
+  margin-left: 2%;
+  text-align: center;
+}
+header .headerTitle h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Great Vibes";
+  text-shadow: -1px -1px #ffd700, 2px 1.5px #000;
+  color: #5a4942;
+  font-size: 3rem;
+}
+header .headerTitle h1 span {
+  color: #489d65;
+}
+
+.heroSection {
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
+.heroSection .heroP {
+  color: #ffd700;
+  text-shadow: -2px -2px #000;
+  font-size: 3rem;
+  height: 50vh;
+  width: 20%;
+  padding: 2%;
+  margin: 0 5%;
+  margin-top: 0;
+  font-weight: bolder;
+  padding-top: 45vh;
+}
+
+.servicesSection {
+  margin: 0;
+  padding: 0;
+}
+.servicesSection .servicesHeader {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.servicesSection .servicesHeader h2 {
+  font-size: 6rem;
+  margin: 0;
+  margin-top: 10%;
+  padding: 0;
+  text-align: center;
+  justify-self: center;
+  font-family: "Great Vibes";
+  color: #489d65;
+  text-shadow: -1px -1px #ffd700, 2px 1.5px #000;
+}
+.servicesSection .servicesList {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
+.servicesSection .servicesList .serviceBox {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+}
+.servicesSection .servicesList .serviceBox h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: -1px -1px #5a4942, 2px 1.5px #000;
+  margin: 0 auto;
+}
+.servicesSection .servicesList .serviceBox .servicePara {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+}
+.servicesSection .servicesList .serviceBox .servicePara p {
+  justify-self: center;
+  margin: 3%;
+  font-size: 1.3rem;
+}
+.servicesSection .servicesList .serviceBox .serviceImage {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle;
+  height: 50%;
+}
+.servicesSection .servicesList .serviceBox .serviceImage img {
+  width: 55%;
+  height: 74%;
+  margin: 1%;
+  padding: 2%;
+}
+
+.showcase {
+  height: 66vh;
+  margin: 0;
+}
+.showcase h2 {
+  margin: 0 auto;
+  text-align: center;
+  height: 10vh;
+}
+.showcase .showcaseGallery {
+  height: 70vh;
+}
+.showcase .showcaseGallery .showcaseRow {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 45%;
+  margin: 0;
+}
+
+.showcaseImgBox {
+  width: 25%;
+  height: 90%;
+  margin: 1%;
+  background: #ffd700;
+  position: relative;
+  border: 1px dashed red;
+}
+.showcaseImgBox:hover .projectThumb {
+  opacity: 0.3;
+}
+.showcaseImgBox:hover .projectDataBox {
+  opacity: 1;
+}
+
+.projectThumb {
+  opacity: 1;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.projectDataBox {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #5a4942;
+  left: 50%;
+  top: 50%;
+  margin-bottom: auto;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.projectDataBox h3 {
+  color: #489d65;
+  margin: 1%;
+  height: 20%;
+  text-align: center;
+  font: "Great Vibes";
+}
+.projectDataBox p {
+  height: 80%;
+  margin: 1%;
+  font: "Elephant";
+}
+.projectDataBox .projectTypeIcon {
+  height: 3%;
+  margin: 0;
+  border: yellow;
+  border: 1px dashed red;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactSection .contactContainer {
+  flex-direction: row;
+  flex-flow: 1 1;
+  width: 80vw;
+  height: 95vh;
+  margin: 0 auto;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 95%;
+  margin: 1%;
+  color: #ffd700;
+}
+.contactForm .namebox {
+  justify-content: space-around;
+  height: 5%;
+  text-align: center;
+  align-items: flex-end;
+  margin-top: 4%;
+  font-weight: bold;
+}
+.contactForm .namebox label {
+  margin-left: 1%;
+}
+.contactForm .namebox input {
+  height: 100%;
+  font-family: "Elephant";
+  background-color: rgba(90, 73, 66, 0.57);
+  border-style: transparent;
+  border-bottom-style: solid #5a4942;
+  border-top-style: transparent;
+  color: #489d65;
+}
+.contactForm label {
+  font-family: "Great Vibes";
+  font-size: 1.4rem;
+  margin-top: 2%;
+  font-weight: bold;
+  margin-left: 2%;
+  letter-spacing: 1.2px;
+}
+.contactForm label span {
+  color: red;
+  text-shadow: -1 -2px black;
+  margin-left: 3px;
+}
+.contactForm input {
+  margin-right: 2%;
+  height: 5%;
+  color: #489d65;
+  background: rgba(90, 73, 66, 0.57);
+  border-style: transparent;
+  border-bottom-style: solid #5a4942;
+  border-top-style: transparent;
+}
+.contactForm input:visited {
+  color: #489d65;
+}
+.contactForm select {
+  margin: 0 2%;
+  height: 5%;
+  width: 40%;
+  font-family: "Elephant";
+  background: rgba(90, 73, 66, 0.57);
+  color: #489d65;
+}
+.contactForm .potentialClientEmail, .contactForm .potentialClientPhone {
+  width: 80%;
+  margin-left: 2%;
+  font-family: "Elephant";
+  letter-spacing: 1.2px;
+  color: #489d65;
+}
+.contactForm textarea {
+  height: 40%;
+  margin: 0 2%;
+  font-family: "Elephant";
+  color: #489d65;
+  background: rgba(90, 73, 66, 0.57);
+  border-style: transparent;
+  border-top-style: transparent;
+}
+.contactForm button {
+  height: 8%;
+  width: 25%;
+  text-align: center;
+  margin: 3% auto;
+  color: rgba(90, 73, 66, 0.57);
+  font-family: "Great Vibes";
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: -2px -2px #ffd700;
+  background-color: #489d65;
+  border-radius: 15% 15%;
+  box-shadow: -1px 4px #ffd700, lighter;
+}
+
+.galleryFilterBar {
+  display: flex;
+  flex-direction: row;
+  margin: 2% auto;
+  height: 27.5vh;
+  width: 90%;
+}
+.galleryFilterBar div {
+  border: dashed blue;
+}
+
+.filterCol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.filterCol .filterTitle {
+  width: 100%;
+  height: 5vh;
+}
+.filterCol .btnContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+}
+.filterCol .btnContainer div {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+.filterCol .btnContainer div p {
+  margin: 5%;
+}
+.filterCol .btnContainer div input {
+  width: 100%;
+  height: 70%;
+  border: 1px solid black;
+  border-radius: 15%;
+}
+
+.languageSwitchContainer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+}
+.languageSwitchContainer .switchCol {
+  width: 11%;
+  height: 100%;
+  margin: 0 auto;
+}
+.languageSwitchContainer .switchCol .switch {
+  width: 100%;
+  height: 13%;
+  border: 1px dashed white;
+  background-color: brown;
+  margin: 15% auto;
+  position: relative;
+}
+.languageSwitchContainer .switchCol .switch label {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: white;
+}
+.languageSwitchContainer .switchCol .switch label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.languageSwitchContainer .switchCol .switch label input[checkbox] {
+  display: none;
+}
+.languageSwitchContainer .switchCol .switch label input:checked {
+  background-color: black;
+}
+.languageSwitchContainer .switchCol .switch:hover, .languageSwitchContainer .switchCol .switch:focus {
+  background-color: #ffd700;
+  color: green;
+}
+
+.resumeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 120vh;
+  width: 95vw;
+  padding: 5px;
+  margin: 0 auto;
+}
+.resumeContainer .page {
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  background-repeat: repeat;
+  box-shadow: 1px -2px rgba(0, 0, 0, 0.5);
+}
+
+.columnHeader {
+  width: 30%;
+  background-color: #5a4942;
+  flex-direction: column;
+}
+.columnHeader .resumeNameBox {
+  height: 10%;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+.columnHeader .resumeNameBox p {
+  margin: 1%;
+  color: #489d65;
+}
+.columnHeader .resumeNameBox span {
+  width: 100%;
+  margin: 0;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #ffd700;
+}
+.columnHeader .headerBox {
+  font-size: 1rem;
+}
+.columnHeader .headerBox h2 {
+  margin: 3px auto;
+  text-align: center;
+  color: #5a4942;
+  font-size: 2rem;
+}
+.columnHeader .resumeListData h4 {
+  margin: 0 0 3% 10%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.columnHeader .resumeListData p {
+  margin: 0 auto;
+  margin-left: 20%;
+  color: #ffd700;
+}
+.columnHeader .resumeListData ul {
+  margin: 0;
+}
+.columnHeader .resumeListData li {
+  margin: 2px auto;
+  color: #ffd700;
+  list-style: none;
+  font-size: 1.3rem;
+}
+.columnHeader .resumeListData li .socialLink {
+  text-decoration: none;
+  color: #fff;
+}
+.columnHeader .resumeListData li .socialLink:hover {
+  color: #489d65;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.rightColumn div {
+  width: 100%;
+  margin: 0;
+  margin-left: 2%;
+  height: auto;
+}
+.rightColumn div h2 {
+  color: #5a4942;
+  margin: 0;
+}
+
+.experienceColumn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0;
+}
+.experienceColumn .dateColumn {
+  width: 25%;
+  margin: 0 auto;
+  font-style: italic;
+}
+.experienceColumn h3 {
+  color: #fff;
+  margin: 0;
+}
+.experienceColumn h3 span {
+  color: #000;
+}
+
+/*# sourceMappingURL=App.css.map */

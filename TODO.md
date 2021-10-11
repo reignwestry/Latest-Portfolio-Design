@@ -7,3 +7,4 @@
 3)  FINISH MENU AND HERO SECTION
 4)  ADD the rest of the sections
 5)  FIX props on projectThumb and ServiceBox
+6) CONVERT TO A Responsive design (mobile, desktop, tablet)

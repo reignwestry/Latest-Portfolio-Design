@@ -2,9 +2,10 @@ import React from 'react';
 
 const FooterSection = () => {
     return(
-        <div>
+        <footer>
             <h1>Footer Section</h1>
-        </div>
-    )
+           Reign Westry &copy;Copyright 2021
+        </footer>
+    );
 }
 export default FooterSection;

@@ -2,7 +2,7 @@
 @use './../components/mixins' as m;
 @use './../components/fonts' as f;
 .showcase {
-    height: 66vh;
+    height: 64vh;
     margin: 0;
 
     h2{
@@ -32,6 +32,7 @@
     margin: 1%;
     background: c.$Secondary;
     position: relative;
+    border: 1px dashed red;
 
     &:hover .projectThumb{
         opacity: 0.3;
@@ -88,17 +89,16 @@
         height: 80%;
         margin: 1%;
         font: f.$FontTwo;
-
     }
 
     .projectTypeIcon{
-        height: 28%;
+        height: 3%;
         margin: 0;
         border: yellow;
-        background: green;
+        // background: blue;
 
         // TODO ALL ICONS IN GREEN with black shadow
-        // TODO ANDRIOD, REACT, PHP, WEBSITE ICON
+        // TODO ANDRoiD, REACT, PHP, WEBSITE ICON
     }
 
 

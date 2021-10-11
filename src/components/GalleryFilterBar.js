@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SwitchCol from './../components/SwitchCol';
 /**
     inputS FUNC
         * One click => darken true
@@ -10,9 +10,6 @@ class GalleryFilterBar extends Component {
     render() {
         return (
             <div className="galleryFilterBar">
-                {/* <div className="filterTitle">
-
-                </div> */}
                 <div className="filterCol">
                     <div className="filterTitle">
                         <h3>Type</h3>
@@ -34,38 +31,9 @@ class GalleryFilterBar extends Component {
                         <h3>Language</h3>
                     </div>
                     <div className="languageSwitchContainer">
-                        <div className="switchCol">
-                            <div className="switchContainer">
-                                <label htmlFor="htmlSwitch">HTML</label>
-                                <input type="checkbox" id="htmlSwitch" className="languageSwitch" value="HTML" />
-                            </div>
-                            <div className="switchContainer">
-                                <label htmlFor="cssSwitch">CSS</label>
-                                <input type="checkbox" id="cssSwitch" className="languageSwitch" value="CSS" />
-                            </div>
-                            <div className="switchContainer">
-                                <label htmlFor="scssSwitch">SCSS</label>
-                                <input type="checkbox" id="cssSwitch" className="languageSwitch" value="SCSS" />
-                            </div>
-                        </div>
-                        {/* 
-                        <div className="switchContainer">
-                            <label htmlFor="phpSwitch">PHP</label>
-                            <input type="checkbox" id="phpSwitch" className="languageSwitch" value="PHP" />
-                        </div>
-                        <div className="switchContainer">
-                            <label htmlFor="mysqlSwitch">MySQL</label>
-                            <input type="checkbox" id="phpSwitch" className="languageSwitch" value="MYSQL" />
-                        </div>
-                        <div className="switchContainer">
-                            <label htmlFor="reactjsSwitch">ReactJS</label>
-                            <input type="checkbox" id="reactjsSwitch" className="languageSwitch" value="ReactJS" />
-                        </div>
-                        <div className="switchContainer">
-                            <label htmlFor="nosqlSwitch">NoSQL</label>
-                            <input type="checkbox" id="nosqlSwitch" className="languageSwitch" value="NoSQL" /> 
-                        </div> 
-                        */}
+                        <SwitchCol />
+                        <SwitchCol />
+                        <SwitchCol />
                     </div>
                 </div>
                 <div className="filterCol">
@@ -119,7 +87,8 @@ class GalleryFilterBar extends Component {
                         <option>2022</option>
                     </select>                                   
                 </div>    
-            </div>  */}
+            </div>  
+*/}
         </div>  
         );
     }

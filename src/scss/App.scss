@@ -1,10 +1,12 @@
 @forward './components/setup';
 @forward './components/header';
+
 @forward'sections/heroSection';
 @forward'sections/servicesSection';
 @forward'sections/showcaseSection';
 @forward'sections/aboutSection';
-@forward'sections/contactSection';
+@forward 'src/scss/sections/contactSection';
+@forward'sections/footerSection';
 
 //Pages
 @forward'pages/About';

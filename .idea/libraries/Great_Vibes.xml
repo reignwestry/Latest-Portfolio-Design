@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Great_Vibes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/font/Great_Vibes.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ProjectThumb from './ProjectThumb';
 
 
 //# SHOWCASE SECTION
-class Showcase extends React.Component {
+class ShowcaseSection extends Component {
     render() {
         return (
             <section className="showcase">
@@ -33,4 +33,4 @@ class Showcase extends React.Component {
     }
 }
 
-export default Showcase;
+export default ShowcaseSection;
